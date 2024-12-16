@@ -1,6 +1,13 @@
 import { bootstrapApplication } from '@angular/platform-browser';
-import { appConfig } from './app/app.config';
+import { provideRouter } from '@angular/router';
 import { AppComponent } from './app/app.component';
+import { routes } from '../src/app/app.routes';
+import { ParcelsComponent } from '../src/app/parcels/parcels.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-bootstrapApplication(AppComponent, appConfig)
-  .catch((err) => console.error(err));
+bootstrapApplication(AppComponent, {
+  providers: [provideRouter(routes)] // Attach the routes here
+}).catch(err => console.error(err));
+bootstrapApplication(ParcelsComponent, {
+  providers: [BrowserAnimationsModule]
+});

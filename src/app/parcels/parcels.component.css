@@ -1,0 +1,37 @@
+/* Custom styles for calendar and card */
+.delivery-date {
+  background-color: #f0ad4e !important;
+  color: white;
+}
+
+.card {
+  border-radius: 10px;
+}
+
+.card-header {
+  background-color: #343a40;
+  color: white;
+  font-size: 1.25rem;
+}
+
+.card-body {
+  background-color: #f8f9fa;
+}
+
+.mb-3 {
+  margin-bottom: 1rem;
+}
+
+/* Styling for the Bootstrap icons */
+.bi {
+  font-size: 1.5rem;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
+}

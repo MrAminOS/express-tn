@@ -1,0 +1,22 @@
+.client-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+  }
+  
+  .client-card h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .client-card p {
+    margin: 5px 0;
+  }
+  
+  button {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+  

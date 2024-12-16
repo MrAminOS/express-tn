@@ -1,0 +1,20 @@
+/* login.component.css and register.component.css */
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .card-header {
+    border-bottom: none;
+  }
+  
+  .btn {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  .form-control {
+    border-radius: 5px;
+    padding: 10px;
+  }
+  

@@ -1,0 +1,36 @@
+.nav-item {
+    margin-right: 20px; /* Spacing between the nav items */
+  }
+  
+  .nav-link {
+    font-size: 1rem; /* Font size */
+    font-weight: 500; /* Slightly bold */
+    transition: all 0.3s ease; /* Smooth transition for hover */
+  }
+  
+  .nav-link:hover {
+    color: #ffc107 !important; /* Yellow color on hover */
+    text-decoration: underline;
+  }
+  
+  .nav-link.active {
+    font-weight: bold;
+    color: #ffc107 !important; /* Yellow color for active link */
+    border-bottom: 2px solid #ffc107; /* Underline active item */
+  }
+  
+  .navbar-nav {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center; /* Center items vertically */
+  }
+  
+  .navbar-nav .nav-item .nav-link {
+    padding: 10px 15px; /* Add padding around the links */
+  }
+  
+  .navbar {
+    background-color: #343a40; /* Dark background for navbar */
+    padding: 10px 20px; /* Padding for the navbar */
+  }
+  

@@ -1,0 +1,13 @@
+<div class="payment-container">
+    <h2>Choose a Payment Method</h2>
+  
+    <div class="form-group">
+      <label for="paymentMethod">Payment Method</label>
+      <select class="form-control" id="paymentMethod" [(ngModel)]="selectedMethod">
+        <option *ngFor="let method of paymentMethods" [value]="method">{{ method }}</option>
+      </select>
+    </div>
+  
+    <button class="btn btn-primary" (click)="handlePayment()">Process Payment</button>
+  </div>
+  

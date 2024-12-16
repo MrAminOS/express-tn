@@ -1,0 +1,13 @@
+<div *ngFor="let client of clients" class="d-flex align-items-center mb-3">
+  <div class="client-card flex-grow-1">
+    <h3>{{ client.name }} ({{ client.number }})</h3>
+    <p>Specialty: {{ client.specialty }}</p>
+    <p>Description: {{ client.description }}</p>
+  </div>
+
+  <!-- Delete Button -->
+  <button class="btn btn-danger ms-2" (click)="deleteClient(client.number)">Delete</button>
+  
+  <!-- Modify Button -->
+  <button class="btn btn-warning ms-2" (click)="modifyClient(client.number, 'New Name')">Modify</button>
+</div>

@@ -1,0 +1,37 @@
+<div class="row">
+  <div class="col-md-6">
+    <!-- Calendar -->
+    <mat-calendar 
+      [dateClass]="dateClass"
+      (selectedChange)="setSelectedDate($event)">
+    </mat-calendar>
+  </div>
+
+  <div class="col-md-6">
+    <!-- Display details for the selected date -->
+    <div *ngIf="selectedDate" class="card">
+      <div class="card-header">
+        <h5>Parcels on {{ selectedDate | date: 'fullDate' }}</h5>
+      </div>
+      <div class="card-body">
+        <div *ngIf="deliveriesForSelectedDate.length > 0; else noDeliveries">
+          <div *ngFor="let parcel of deliveriesForSelectedDate" class="mb-3">
+            <div class="d-flex align-items-center">
+              <i [ngClass]="parcel.statusIcon" class="mr-2"></i>
+              <div>
+                <img [src]="parcel.profilePicture" alt="{{ parcel.clientName }}" class="rounded-circle" width="40" height="40">
+
+                <h6>{{ parcel.clientName }}</h6>
+
+                <p>Parcel Number: {{ parcel.num }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ng-template #noDeliveries>
+          <p>No deliveries on this date.</p>
+        </ng-template>
+      </div>
+    </div>
+  </div>
+</div>
